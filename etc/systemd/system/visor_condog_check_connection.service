@@ -1,0 +1,17 @@
+[Unit]
+
+Description=Condog check_connection
+#After=network.target
+After=lightdm.service
+
+
+[Service]
+
+Type=simple
+User=root
+ExecStart=/usr/local/bin/check_connection.sh.
+Restart=on-abort     
+
+
+[Install]                                                                                      
+WantedBy=multi-user.target   

@@ -1,0 +1,10 @@
+/var/log/condog
+/var/log/disconnect
+{
+	rotate 7
+	daily
+	missingok
+	notifempty
+	delaycompress
+	compress
+}
