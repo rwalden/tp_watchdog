@@ -1,0 +1,1 @@
+ACTION=="add", SUBSYSTEM=="usb", ATTRS{idVendor}=="148f", ATTRS{idProduct}=="761a", RUN+="/usr/local/bin/hotplug-add-ra0.sh"
